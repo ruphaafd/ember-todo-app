@@ -1,0 +1,20 @@
+<li>
+    {{#if isEditing}}
+    <Input type='text' @placeholder='Task Name' @value={{todo.task}} class='form-control' />
+    <button class="btn btn-primary" {{action 'updateTask'}}>Update</button>
+    <button class="btn btn-secondary" {{action 'cancelTodo'}}>Cancel</button>
+    {{else}}
+    <h4 class={{if todo.completed 'strike'}}>
+        <Input @type="checkbox" class="toggle" @checked={{todo.completed}} @change={{action "completeTask" todo}} />
+        {{todo.task}}
+        <div class="actions">
+            <a {{action 'editTodo'}} href class="edit-todo">
+                Edit
+            </a>
+            <a {{action 'deleteTodo' todo}} href class="remove-todo">
+                Delete
+            </a>
+        </div>
+    </h4>
+    {{/if}}
+</li>

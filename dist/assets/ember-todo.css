@@ -1,0 +1,118 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  padding-top: 70px;
+  font-family: "Concert One", cursive;
+  background: linear-gradient(
+    to right,
+    #e2b8f7,
+    #d4bafa,
+    #c7bcfb,
+    #b9befb,
+    #acbff9
+  );
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: white !important;
+}
+
+.navbar {
+  background: #e1563f top center;
+}
+
+.form-inline .form-group input {
+  width: 250px;
+}
+
+#todos {
+  margin-top: 25px;
+}
+
+#todos li {
+  margin-top: 15px;
+}
+
+.actions {
+  float: right;
+}
+.actions a {
+  margin-left: 10px;
+}
+
+.remove-todo {
+  color: red;
+  font-size: 1.25rem;
+}
+
+.edit-todo {
+  color: #555;
+  font-size: 1.2rem;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.container {
+  width: 750px;
+  margin: 0 auto;
+}
+
+.add-todo .row h4 {
+  font-size: 25px;
+}
+.form-inline {
+  display: flex;
+}
+
+input {
+  border: 2px solid black;
+  padding: 10px;
+  width: 300px;
+  flex: 1;
+  font-size: 15px;
+  outline: none;
+}
+
+.form-inline button,
+#todos button {
+  margin-left: 15px;
+  padding: 10px 30px;
+  font-size: 15px;
+  font-weight: bold;
+  background: linear-gradient(#08c7fe 0%, #04d7f2 71%, #02ffd0 100%);
+  border: 2px solid;
+  outline: none;
+  cursor: pointer;
+}
+
+#todos .btn-secondary {
+  background: rgb(223, 220, 220);
+}
+
+.todo-list {
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  border: 2px solid black;
+  margin: 0;
+  margin-right: 5px !important;
+  height: 14px !important;
+  width: 14px !important;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+}
+input[type="checkbox"]:checked {
+  background: #f76a8c;
+  border: 1px solid black;
+  box-shadow: none;
+  outline: none;
+}

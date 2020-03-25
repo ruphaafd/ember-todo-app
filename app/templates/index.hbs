@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="add-todo">
+        <div class="row">
+            <h4><b>Add new task</b></h4>
+            <TodoForm />
+            <div class="row">
+                <div class="todo-list">
+                    <h4><b>To Dos</b></h4>
+                    <ul id="todos">
+                        {{#each model as |todo|}}
+                        <Todo @todo={{todo}} />
+                        {{else}}
+                        <h4>No Tasks to do</h4>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
